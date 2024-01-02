@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { GiCancel } from "react-icons/gi";
+import { AiOutlineClose } from "react-icons/ai";
+import { LinksBlock } from "./components/LinksBlock";
+import { AdvancedStatistics } from "./components/AdvancedStatistics";
+import { BoostSection } from "./components/BoostSection";
+import { Footer } from "./Footer";
+import { Header } from "./components/Header";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="font-poppin">
+      <Header />
+      <main className="bg-gray-100">
+        <LinksBlock />
+        <AdvancedStatistics />
+        <BoostSection />
+      </main>
+      <Footer />
     </div>
   );
 }
-
-export default App;
